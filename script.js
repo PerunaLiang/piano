@@ -71,7 +71,7 @@ allKeys.forEach((classKey) => {
 
         // console.log(classKey.id)
         let showLetter = document.getElementById("guide")
-        showLetter.innerText = `You pressed ${classKey.id}`
+        showLetter.innerText = `Note: ${classKey.id}`
 
     }
     )
@@ -166,7 +166,7 @@ function activeClass(keyID) {
     }
 
     let showLetter = document.getElementById("guide")
-    showLetter.innerText = `You pressed ${keyID}`
+    showLetter.innerText = `Note: ${keyID}`
 
 
 }
@@ -184,6 +184,7 @@ document.body.addEventListener("keydown", function (keyPress) {
     // console.log(keyPress.key)
 
     if (keyPress.repeat) return
+    // stop repeating the keys when pressed down longer
 
     switch (keyPress.key) {
         case "s":
@@ -237,7 +238,7 @@ document.body.addEventListener("keydown", function (keyPress) {
             break;
         default:
             let wrongKey = document.getElementById("guide")
-            wrongKey.innerText = "Start from s"
+            wrongKey.innerText = "Start from s on your keyboard"
 
 
         //   alternate way
