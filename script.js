@@ -1,4 +1,4 @@
-console.log('hi')
+// The
 
 // // Method 2
 // const audio1 = new Audio()
@@ -7,8 +7,6 @@ console.log('hi')
 // // Method 3
 // let sound1 = new Audio()
 // sound1.src = "./Sounds/NoteC.mp3"
-
-
 
 /*
 // Method 2 - play the sound
@@ -184,6 +182,8 @@ function activeClass(keyID) {
 document.body.addEventListener("keydown", function (keyPress) {
     // console.log("you pressed a key")
     // console.log(keyPress.key)
+
+    if (keyPress.repeat) return
 
     switch (keyPress.key) {
         case "s":
